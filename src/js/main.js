@@ -11,6 +11,6 @@ $('div').click(function() {
 
 // console.log($('div').eq(2).find('.some'));
 // console.log($('.some').closest('.findmea'));
-console.log($('.findme').siblings());
+$('button').fadeIn(1800);
 
 // console.log($('button').html('hello'));
