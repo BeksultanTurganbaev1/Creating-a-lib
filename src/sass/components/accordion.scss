@@ -1,0 +1,95 @@
+.accordion {
+    max-width: 700;
+
+    &-head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 50%;
+        padding: 10px 20px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        font-size: 18px;
+        color: $dark;
+        cursor: pointer;
+
+        &--active {
+            color: $primary;
+        }
+
+    }
+
+    &-content {
+        max-height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.5s, max-height 0.6s, padding 0.1s;
+        background-color: #fff;
+        border: 1px solid rgba(224, 211, 211, 1);
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+
+        &--active {
+            overflow: visible;
+            opacity: 1;
+        }
+    }
+
+    &-inner {
+        display: block;
+        padding: 20px;
+    }
+}
+
+// .accordion {
+//     max-width: 700px;
+
+//     &-panel {
+//         display: inline-block;
+//         width: 100%;
+//         min-height: 50px;
+//     }
+
+//     &-item {
+//         padding: 10px 20px;
+//         font-weight: 500;
+//         font-size: 20px;
+//         text-align: center;
+//         border: 1px solid rgba(0, 0, 0, .2);
+//         border-bottom: none;
+//         border-radius: 4px 4px 0 0;
+//         cursor: pointer;
+
+//         &:nth-child(5) {
+//             border-bottom: 1px solid rgba(0, 0, 0, .2);
+//         }
+
+//         &:hover {
+//             background-color: rgba(0, 0, 0, .1);
+//         }
+//     }
+
+//     &-content {
+//         display: none;
+//         margin-bottom: 10px;
+//         padding: 0 20px 20px;
+//         border: 1px solid rgba(0, 0, 0, .2);
+//         border-top: none;
+//         border-radius: 0 0 4px 4px;
+
+//         &--active {
+//             display: block;
+//         }
+
+//         &--title {
+//             font-size: 18px;
+//             font-weight: 500;
+//             padding: 15px 0;
+//             border-top: 1px solid rgba(0, 0, 0, .1);
+//             border-bottom: 1px solid rgba(0, 0, 0, .1);
+//         }
+
+//         &--text {
+//             padding-top: 15px;
+//         }
+//     }
+// }
